@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICE CREAM | Machines</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="shop-page">
+
+    <header>
+        <div class="header-top">
+            <div class="spacer"></div>
+            <h1><a href="index.html">ICE CREAM</a></h1>
+            <button id="openCart" class="cart-trigger">BAG [<span id="cartCount">0</span>]</button>
+        </div>
+        <nav class="nav-buttons">
+            <a href="machines.html" class="nav-btn active">Machines</a>
+            <a href="flavors.html" class="nav-btn">Flavors</a>
+            <a href="#" class="nav-btn">FAQ</a>
+        </nav>
+    </header>
+
+    <main class="machine-section">
+        <h2 class="section-title">The Equipment Drop</h2>
+        <div class="machine-grid">
+            
+            <div class="machine-card machine-sm">
+                <div class="img-container">
+                    <img src="machine.jpg" alt="Home Edition">
+                </div>
+                <h2>IC-01 "Studio"</h2>
+                <p style="color: #999; font-size: 0.8rem; text-transform: uppercase;">Compact / 2L Capacity</p>
+                <p class="price">89.990 Ft</p>
+                <button class="order-btn" data-name="IC-01 Studio" data-price="89990">Add to Bag</button>
+            </div>
+
+            <div class="machine-card machine-md">
+                <div class="img-container">
+                    <img src="machine.jpg" alt="Pro Edition">
+                </div>
+                <h2>IC-05 "Pro-Series"</h2>
+                <p style="color: #999; font-size: 0.8rem; text-transform: uppercase;">Countertop / 8L Capacity</p>
+                <p class="price">155.000 Ft</p>
+                <button class="order-btn" data-name="IC-05 Pro-Series" data-price="155000">Add to Bag</button>
+            </div>
+
+            <div class="machine-card machine-lg">
+                <div class="img-container">
+                    <img src="machine.jpg" alt="Industrial Edition">
+                </div>
+                <h2>IC-X "Industrial"</h2>
+                <p style="color: #999; font-size: 0.8rem; text-transform: uppercase;">Floor Standing / 25L Capacity</p>
+                <p class="price">420.000 Ft</p>
+                <button class="order-btn" data-name="IC-X Industrial" data-price="420000">Add to Bag</button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>YOUR BAG</h2>
+            <button id="closeCart" class="close-btn">✕</button>
+        </div>
+        <div id="cartItems" class="cart-content"></div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>TOTAL</span>
+                <span id="cartTotal">0 Ft</span>
+            </div>
+            <a href="checkout.html" class="checkout-link-btn">PROCEED TO CHECKOUT</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

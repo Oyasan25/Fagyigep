@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICE CREAM | Flavors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="shop-page">
+
+    <header>
+        <div class="header-top">
+            <div class="spacer"></div>
+            <h1><a href="index.html">ICE CREAM</a></h1>
+            <button id="openCart" class="cart-trigger">BAG [<span id="cartCount">0</span>]</button>
+        </div>
+        <nav class="nav-buttons">
+            <a href="machines.html" class="nav-btn">Machines</a>
+            <a href="flavors.html" class="nav-btn active">Flavors</a>
+            <a href="#" class="nav-btn">FAQ</a>
+        </nav>
+    </header>
+
+    <main class="machine-section">
+        <h2 class="section-title">The Flavor Drop</h2>
+        <div class="flavor-grid">
+            
+            <div class="machine-card flavor-mini">
+                <div class="img-container small-img">
+                    <img src="https://images.unsplash.com/photo-1560035015-37aede3c80ca?w=400" alt="Strawberry">
+                </div>
+                <h2>Wild Strawberry</h2>
+                <p class="price">4.200 Ft</p>
+                <button class="order-btn" data-name="Wild Strawberry" data-price="4200">Add to Bag</button>
+            </div>
+
+            <div class="machine-card flavor-mini">
+                <div class="img-container small-img">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Pistachio">
+                </div>
+                <h2>Sicilian Pistachio</h2>
+                <p class="price">5.500 Ft</p>
+                <button class="order-btn" data-name="Sicilian Pistachio" data-price="5500">Add to Bag</button>
+            </div>
+
+            <div class="machine-card flavor-mini">
+                <div class="img-container small-img">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400" alt="Chocolate">
+                </div>
+                <h2>70% Dark Cocoa</h2>
+                <p class="price">4.200 Ft</p>
+                <button class="order-btn" data-name="70% Dark Cocoa" data-price="4200">Add to Bag</button>
+            </div>
+
+            <div class="machine-card flavor-mini">
+                <div class="img-container small-img">
+                    <img src="https://images.unsplash.com/photo-1532678466967-94a5ec4a0c1b?w=400" alt="Mango">
+                </div>
+                <h2>Alphonso Mango</h2>
+                <p class="price">4.800 Ft</p>
+                <button class="order-btn" data-name="Alphonso Mango" data-price="4800">Add to Bag</button>
+            </div>
+
+            <div class="machine-card flavor-mini">
+                <div class="img-container small-img">
+                    <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400" alt="Vanilla">
+                </div>
+                <h2>Madagascar Vanilla</h2>
+                <p class="price">3.900 Ft</p>
+                <button class="order-btn" data-name="Madagascar Vanilla" data-price="3900">Add to Bag</button>
+            </div>
+
+            <div class="machine-card flavor-mini">
+                <div class="img-container small-img">
+                    <img src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?w=400" alt="Hazelnut">
+                </div>
+                <h2>Piedmont Hazelnut</h2>
+                <p class="price">5.200 Ft</p>
+                <button class="order-btn" data-name="Piedmont Hazelnut" data-price="5200">Add to Bag</button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>YOUR BAG</h2>
+            <button id="closeCart" class="close-btn">✕</button>
+        </div>
+        <div id="cartItems" class="cart-content"></div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>TOTAL</span>
+                <span id="cartTotal">0 Ft</span>
+            </div>
+            <a href="checkout.html" class="checkout-link-btn">PROCEED TO CHECKOUT</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Minden a csapat tulajdona.
